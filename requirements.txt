@@ -1,2 +1,11 @@
+# Django
 Django==2.0.6
 pytz==2018.4
+
+# Dynaconf
+click==6.7
+dynaconf==1.0.2
+python-box==3.2.0
+python-dotenv==0.8.2
+six==1.11.0
+toml==0.9.4
