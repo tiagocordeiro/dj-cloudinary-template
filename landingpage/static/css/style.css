@@ -59,3 +59,7 @@ footer.page-footer {
 .sidenav-overlay {
    z-index: 996;
 }
+
+.card .card-image img {
+    width: auto;
+}
