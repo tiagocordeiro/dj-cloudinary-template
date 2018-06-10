@@ -23,12 +23,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "-sah%cab8t^e_t2&dxs03s3p7a8!3&j4)zuojq@bf_arrha^4yN3wP455"
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = settings.get('DJANGO_DEBUG')
+DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['127.0.0.1', '.localhost', '.herokuapp.com']
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', default=[], cast=Csv())
 
 
 # Application definition
@@ -150,7 +150,7 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': settings.get('CLOUDINARY_NAME'),
-    'API_KEY': settings.get('CLOUDINARY_API_KEY'),
-    'API_SECRET': settings.get('CLOUDINARY_API_SECRET')
+    'CLOUD_NAME': config('CLOUDINARY_NAME'),
+    'API_KEY': config('CLOUDINARY_API_KEY'),
+    'API_SECRET': config('CLOUDINARY_API_SECRET')
 }
