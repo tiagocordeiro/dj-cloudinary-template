@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
-from dynaconf import settings
 from dj_database_url import parse as dburl
 from decouple import config, Csv
 
