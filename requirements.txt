@@ -6,7 +6,7 @@ dj-database-url==0.5.0
 Django==2.1.4
 django-cloudinary-storage==0.2.3
 django-heroku==0.3.1
-dynaconf==1.0.2
+dynaconf==1.2.0
 gunicorn==19.8.1
 idna==2.6
 mock==2.0.0
