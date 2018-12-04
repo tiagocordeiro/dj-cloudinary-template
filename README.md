@@ -1,5 +1,9 @@
 # Exemplo simples de uso do Cloudinary com Django
 
+[![Updates](https://pyup.io/repos/github/tiagocordeiro/dj-cloudinary-template/shield.svg)](https://pyup.io/repos/github/tiagocordeiro/dj-cloudinary-template/)
+[![Python 3](https://pyup.io/repos/github/tiagocordeiro/dj-cloudinary-template/python-3-shield.svg)](https://pyup.io/repos/github/tiagocordeiro/dj-cloudinary-template/)
+
+
 ## Como rodar o projeto?
 
 * Clone esse repositório.
