@@ -20,6 +20,6 @@ python-dotenv==0.9.1
 pytz==2018.7
 requests==2.20.1
 six==1.11.0
-toml==0.9.4
+toml==0.10.0
 urllib3==1.22
 whitenoise==3.3.1
